@@ -63,5 +63,20 @@ struct HoverScene {
         containerNode.scale = SCNVector3(0.5, 0.5, 0.5)
         scene.rootNode.addChildNode(containerNode)
     }
+    
+    func addText() {
+        guard let scene = self.scene else { return }
+        
+        let text = SCNText(string: "南一楼", extrusionDepth: 0.1)
+        text.font = UIFont.systemFont(ofSize: 1.0)
+        text.flatness = 0.01
+        text.firstMaterial?.diffuse.contents = UIColor.white
+        
+        let node = SCNNode(geometry: text)
+        node.position = SCNVector3(0, 0, -0.3)
+        node.scale = SCNVector3(0.1, 0.1, 0.1)
+        
+        scene.rootNode.addChildNode(node)
+    }
 }
 

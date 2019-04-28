@@ -71,6 +71,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 let transform = camera.transform * translation
                 let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
                 sceneController.addBuilding(position: position)
+                sceneController.addText()
             }
         }
     }

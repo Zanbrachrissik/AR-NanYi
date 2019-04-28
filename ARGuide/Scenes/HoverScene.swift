@@ -37,6 +37,13 @@ struct HoverScene {
         let directionalLight = SCNLight()
         directionalLight.type = .directional
         directionalLight.color = UIColor(white: 0.8, alpha: 1.0)
+        
+        //cast a shadow
+        directionalLight.castsShadow = true
+        directionalLight.shadowMode = .deferred
+        directionalLight.shadowColor = UIColor.black.withAlphaComponent(0.6)
+        directionalLight.shadowRadius = 5.0
+        
         let directionalNode = SCNNode()
         directionalNode.eulerAngles = SCNVector3Make(GLKMathDegreesToRadians(-40), GLKMathDegreesToRadians(0), GLKMathDegreesToRadians(0))
         directionalNode.light = directionalLight

@@ -1,10 +1,8 @@
 # AR NanYi Building
 
-A simple first tutorial for getting an ARKit scene up and running with SceneKit. Follow the [tutorial at the Nike S23NYC Engineering blog](https://medium.com/s23nyc-tech/getting-started-with-arkit-and-scenekit-76814862cc75).
+A simple application for getting an ARKit scene up and running with SceneKit. Click the screen and the model would show up, then you can have a close look at it.
 
-Shows scene initialization, how to create an object and add it to the scene when you tap. 
-
-<img src="https://github.com/AbovegroundDan/ARTutorial_Part1/blob/master/many_spheres.jpg" width="20%" height="20%">
+<img src="https://github.com/Zanbrachrissik/AR-NanYi/blob/master/NanYi.png" width="20%" height="20%">
 
 # Requirements
 
